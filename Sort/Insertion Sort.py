@@ -7,8 +7,7 @@ def insertion_sort(arr):
             temp = arr[i]
             for j in range(i-1, -1, -1):
                 if arr[j] > temp:
-                    arr[j+1] = arr[j]
-                    arr[j] = temp
+                    arr[j+1], arr[j] = arr[j], arr[j+1]
     
         print("Sorted Array:", arr)
 
