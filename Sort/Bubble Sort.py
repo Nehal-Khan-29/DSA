@@ -4,13 +4,13 @@ def bubble_sort(arr):
     
     else:    
         for i in range(len(arr)):
-            for j in range(len(arr)-i-1):
-                if arr[j] > arr[j+1]:
-                    arr[j], arr[j+1] = arr[j+1], arr[j]
+            for j in range(len(arr) -i -1):
+                if arr[j] > arr[j + 1]:
+                    arr[j], arr[j + 1] = arr[j + 1], arr[j]
                     
         print("Sorted Array:", arr)
 
-arr = [1,5,3,4,2]
+arr = [1, 5, 3, 4, 2]
 bubble_sort(arr)
 
 # Time Complexity 

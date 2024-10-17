@@ -5,13 +5,13 @@ def insertion_sort(arr):
     else:
         for i in range(1, len(arr)):
             temp = arr[i]
-            for j in range(i-1, -1, -1):
+            for j in range(i - 1, -1, -1):
                 if arr[j] > temp:
-                    arr[j+1], arr[j] = arr[j], arr[j+1]
+                    arr[j + 1], arr[j] = arr[j], arr[j + 1]
     
         print("Sorted Array:", arr)
 
-arr = [1,5,3,4,2]
+arr = [1, 5, 3, 4, 2]
 insertion_sort(arr)
 
 # Time Complexity 
